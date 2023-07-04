@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="My First HTML" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="John Doe" />
+    <title>My First HTML</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.png" />
+  </head>
+  <body>
+    <h1>My First HTML</h1>
+
+    <p>My first paragraph.</p>
+
+    <label for="name">Name:</label>
+    <input
+      id="name"
+      type="text"
+      name="name"
+      value=""
+      placeholder="Input your name"
+    />
+    <button id="btnHello" type="button">Hello</button>
+    <div id="message"></div>
+    <script>
+      document
+        .getElementById("btnHello")
+        .addEventListener("click", function (event) {
+          var name = document.getElementById("name").value;
+          name = name.trim();
+          if (name.length > 0) {
+            document.getElementById("message").innerHTML =
+              "Hello " + name + "!";
+          } else {
+            alert("Please input your name");
+          }
+        });
+    </script>
+  </body>
+</html>
