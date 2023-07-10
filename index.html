@@ -10,9 +10,7 @@
   </head>
   <body>
     <h1>My First HTML</h1>
-
     <p>My first paragraph.</p>
-
     <label for="name">Name:</label>
     <input
       id="name"
@@ -23,19 +21,5 @@
     />
     <button id="btnHello" type="button">Hello</button>
     <div id="message"></div>
-    <script>
-      document
-        .getElementById("btnHello")
-        .addEventListener("click", function (event) {
-          var name = document.getElementById("name").value;
-          name = name.trim();
-          if (name.length > 0) {
-            document.getElementById("message").innerHTML =
-              "Hello " + name + "!";
-          } else {
-            alert("Please input your name");
-          }
-        });
-    </script>
   </body>
 </html>
