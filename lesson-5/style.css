@@ -1,0 +1,112 @@
+section {
+    padding: 10px;
+}
+
+section h2 {
+    margin-left: -5px;
+}
+
+* {
+    color: rgb(243, 0, 186);
+}
+
+#sample1 {
+    color: red;
+}
+
+.sample-2 {
+    color: blue;
+}
+
+.background-1 {
+    background: pink;
+}
+
+[name="input-name"] {
+    color: green;
+}
+
+input {
+    color: goldenrod;
+}
+
+p {
+    color: darkorange;
+}
+
+p,
+span {
+    font-size: 20px;
+}
+
+span {
+    font-size: 15px;
+}
+
+p.backgroun-blue {
+    background-color: blue;
+}
+
+section div {
+    font-size: 15px;
+}
+
+div span {
+    color: gold;
+}
+
+div>span {
+    background-color: purple;
+}
+
+p~div {
+    color: green;
+}
+
+p+div {
+    color: red;
+}
+
+.mouse-hover:hover {
+    background-color: red;
+}
+
+a:link {
+    color: #ff0000;
+}
+
+a:visited {
+    color: #00ff00;
+}
+
+a:hover {
+    color: #ff00ff;
+}
+
+a:active {
+    color: #0000ff;
+}
+
+span:first-child {
+    background-color: burlywood;
+}
+
+.first-letter::first-letter {
+    font-size: 40px;
+}
+
+.first-line::first-line {
+    font-size: 25px;
+}
+
+.before::before {
+    content: "Before::";
+}
+
+.after::after {
+    content: "::After";
+    background: pink;
+        width: 40%;
+        max-width: 200px;
+        min-width: 100px;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CSS</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="CSS" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <section>
+      <h2>Simple selectors</h2>
+      <div id="sample1 " class="background-1">Selector by id</div>
+      <div class="sample-2 large unique-font background-1">
+        Selector by class
+      </div>
+      <input
+        name="input-name"
+        value="Selector by name"
+        style="display: block; display: block"
+      />
+      <p>Selector by element (1)</p>
+      <p>Selector by element (2)</p>
+      <p>Selector by multiple elements (1)</p>
+      <div><span>Selector by multiple elements (2)</span></div>
+      <p class="backgroun-blue">Selector by element & class</p>
+      <div>All selector</div>
+    </section>
+    <section>
+      <h2 id="selectForName" class="selectForName">Combinator selectors</h2>
+      <input name="user-name" />
+      <div>Descendant Selector</div>
+      <div>
+        <span>Child selector (>) (applied)</span>
+      </div>
+      <div>
+        <p><span>Child selector (not applied)</span></p>
+      </div>
+      <p>P element</p>
+      <div style="display: sss; scroll-snap-type: ss">
+        Adjacent Sibling Selector (+)
+      </div>
+      <div>General Sibling Selector (~)</div>
+    </section>
+    <section>
+      <h2>Pseudo-class selectors</h2>
+      <div class="mouse-hover">Mouse hover</div>
+      <div><a href="/unvisited.html">Unvisited link</a></div>
+      <div><a href="/unvisited.html">Visited link</a></div>
+      <div><a href="/selected.html">Selected link</a></div>
+      <div>
+        <span>Span 1</span>
+        <span>Span 2</span>
+      </div>
+    </section>
+    <section>
+      <h2>Pseudo-elements selectors</h2>
+      <h2>::first-letter</h2>
+      <p class="first-letter">
+        In my younger and more vulnerable years my father gave me some advice
+        that I've been turning over in my mind ever since. 'Whenever you feel
+        like criticizing anyone,' he told me, 'just remember that all the people
+        in this world haven't had the advantages that you've had.'
+      </p>
+      <h2>::first-line</h2>
+      <p class="first-line">
+        In my younger and more vulnerable years my father gave me some advice
+        that I've been turning over in my mind ever since. 'Whenever you feel
+        like criticizing anyone,' he told me, 'just remember that all the people
+        in this world haven't had the advantages that you've had.'
+      </p>
+      <h2>::before | ::after</h2>
+      <p class="before after">
+        In my younger and more vulnerable years my father gave me some advice
+        that I've been turning over in my mind ever since. 'Whenever you feel
+        like criticizing anyone,' he told me, 'just remember that all the people
+        in this world haven't had the advantages that you've had.'
+      </p>
+    </section>
+  </body>
+</html>

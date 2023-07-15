@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Table</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Table" />
+    <style>
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        border: 1px solid #dddddd;
+        width: 100%;
+      }
+      td,
+      th {
+        border: 1px solid #dddddd;
+        padding: 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div>table 1</div>
+      <table>
+        <caption>
+          table caption
+        </caption>
+        <thead>
+          <tr>
+            <th>company</th>
+            <th>contact</th>
+            <th>country</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>alfreds futterkiste</td>
+            <td>maria anders</td>
+            <td>germany</td>
+          </tr>
+          <tr>
+            <td>centro comercial moctezuma</td>
+            <td>francisco chang</td>
+            <td>mexico</td>
+          </tr>
+          <tr>
+            <td>ernst handel</td>
+            <td>roland mendel</td>
+            <td>austria</td>
+          </tr>
+          <tr>
+            <td>island trading</td>
+            <td>helen bennett</td>
+            <td>uk</td>
+          </tr>
+          <tr>
+            <td>laughing bacchus winecellars</td>
+            <td>yoshi tannamuri</td>
+            <td>canada</td>
+          </tr>
+          <tr>
+            <td>magazzini alimentari riuniti</td>
+            <td>giovanni rovelli</td>
+            <td>italy</td>
+          </tr>
+        </tbody>
+        <!-- <tfoot>
+          <tr>
+            <td>Total</td>
+            <td></td>
+            <td>7</td>
+          </tr>
+        </tfoot> -->
+      </table>
+      <div>table 2</div>
+      <table>
+        <caption>
+          table caption 2
+        </caption>
+        <thead>
+          <tr>
+            <th colspan="2">company</th>
+            <th>country</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>alfreds futterkiste</td>
+            <td>maria anders</td>
+            <td rowspan="3">germany</td>
+          </tr>
+          <tr>
+            <td>centro comercial moctezuma</td>
+            <td>francisco chang</td>
+            <!-- <td>mexico</td> -->
+          </tr>
+          <tr>
+            <td>ernst handel</td>
+            <td>roland mendel</td>
+            <!-- <td>austria</td> -->
+          </tr>
+          <tr>
+            <td>island trading</td>
+            <td>helen bennett</td>
+            <td>uk</td>
+          </tr>
+          <tr>
+            <td>laughing bacchus winecellars</td>
+            <td>yoshi tannamuri</td>
+            <td>canada</td>
+          </tr>
+          <tr>
+            <td>magazzini alimentari riuniti</td>
+            <td>giovanni rovelli</td>
+            <td>italy</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="2">Total</td>
+            <td>7</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </body>
+</html>
