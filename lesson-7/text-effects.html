@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text effects</title>
+    <style>
+      .title {
+        font-size: 4rem;
+        font-weight: bold;
+      }
+      .box-1 {
+        display: inline-block;
+        width: 200px;
+        border: 1px solid #000;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+      .box-2 {
+        width: 200px;
+        height: 70px;
+        border: 1px solid #000;
+        word-wrap: break-word;
+      }
+      .box-3 {
+        width: 200px;
+        height: 70px;
+        border: 1px solid #000;
+        word-break: break-all;
+      }
+      .vertical-rl {
+        writing-mode: vertical-rl;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="title">text-overflow</div>
+    <span class="box-1"> This is a demo of using text-overflow </span>
+    <div class="title">word-wrap</div>
+    <p class="box-2">
+      This paragraph contains a very long word:
+      thisisaveryveryveryveryveryverylongword. The long word will break and wrap
+      to the next line.
+    </p>
+    <div class="title">word-break</div>
+    <p class="box-3">
+      This paragraph contains some text. This line will-break-at-hyphens
+      thisisaveryveryveryveryveryverylongword.
+    </p>
+    <div class="title">writing-mode</div>
+    <p class="box-4">
+      Some text with a span element with a
+      <span class="vertical-rl">vertical-rl</span> writing-mode.
+    </p>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Font</title>
+    <style>
+      @font-face {
+        font-family: "Custom Font";
+        src: url("/assets/fonts/Orbitron-VariableFont_wght.ttf");
+        font-size: 4rem;
+        font-weight: bold;
+      }
+      .default-font {
+        font-family: "Times New Roman", Times, serif;
+      }
+      .italic {
+        font-style: italic;
+      }
+      .oblige {
+        font-style: oblique;
+      }
+      .custom-font {
+        font-family: "Custom Font";
+      }
+      .custom-font.customized {
+        font-size: 2rem;
+        font-weight: bolder;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="default-font">default font</div>
+    <div class="default-font italic">italic</div>
+    <div class="custom-font">custom font</div>
+    <div class="custom-font customized">custom font</div>
+  </body>
+</html>
