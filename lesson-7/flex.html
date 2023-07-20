@@ -5,27 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flex</title>
     <style>
+      :root {
+        --blue: #1e90ff;
+        --white: #ffffff;
+      }
+
       .flex {
         display: flex;
         flex-direction: row;
-        flex-flow: row;
         flex-wrap: wrap;
-        gap: 10px;
-        height: 500px;
+        /* flex-flow: row-reverse; */
         border: 1px solid blueviolet;
+        gap: 15px;
         justify-content: center;
         align-items: center;
-        align-content: center;
+        /* align-content: center; */
+        /*height: 500px;
+        
+      
+         */
+        height: 400px;
+        background-color: blanchedalmond;
       }
       .flex > div {
-        /* width: 100px;
-        height: 100px; */
-        background-color: hotpink;
+        width: 150px;
+        height: 100px;
+        background-color: var(--blue);
         text-align: center;
         align-items: center;
         border: 1px solid #000;
         box-sizing: border-box;
         padding: 10px;
+        /* margin: 15px; */
       }
     </style>
   </head>
@@ -38,7 +49,14 @@
       <div style="order: 2">4</div>
       <div style="flex: 1">5</div>
       <div style="flex: 2">6</div>
-      <div style="flex: 3">7</div>
+      <div style="padding-left: 5rem" class="pt-4">7</div>
+      <!-- <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div> -->
       <div>8</div>
       <div>9</div>
       <div>10</div>
