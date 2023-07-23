@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transition</title>
+    <style>
+      .title {
+        font-size: 4rem;
+        font-weight: bold;
+      }
+      [class^="box-"] {
+        width: 200px;
+        height: 200px;
+        border: 1px solid #000;
+        margin-bottom: 100px;
+        margin-left: 100px;
+        /* transition: width 2s, height 2s, transform 2s linear 1s; */
+        transition: all 2s ease-out;
+        transition-delay: 1s;
+        transition-duration: 2s;
+        transition-property: all;
+        transition-timing-function: ease-out;
+        background-color: greenyellow;
+      }
+      [class^="box-"]:hover {
+        width: 300px;
+        height: 300px;
+      }
+      .box-1:hover,
+      .box-1.transform {
+        transform: translate(10px, 100px);
+        background-color: royalblue;
+      }
+      .box-2:hover,
+      .box-2.transform {
+        transform: rotate(30deg);
+      }
+      .box-3:hover,
+      .box-3.transform {
+        transform: scale(2, 2);
+      }
+      .box-4:hover,
+      .box-4.transform {
+        transform: scaleX(2);
+      }
+      .box-5:hover,
+      .box-5.transform {
+        transform: skew(20deg, 40deg);
+      }
+      .box-6:hover,
+      .box-6.transform {
+        transform: matrix(1, -0.3, 0, 1, 0, 0);
+      }
+      .box-7:hover,
+      .box-7.transform {
+        transform: rotateX(150deg);
+      }
+    </style>
+  </head>
+  <body>
+    <button type="button">Transform</button>
+    <div class="box-1">Translate</div>
+    <div class="box-2">Rotate</div>
+    <div class="box-3">Scale</div>
+    <div class="box-4">ScaleX</div>
+    <div class="box-5">Skew</div>
+    <div class="box-6">Matrix</div>
+    <div class="box-7">RotateX</div>
+    <script>
+      document.querySelector("button").addEventListener("click", () => {
+        document.querySelectorAll("[class^='box-']").forEach((box) => {
+          box.classList.toggle("transform");
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transform</title>
+    <style>
+      .title {
+        font-size: 4rem;
+        font-weight: bold;
+      }
+      [class^="box-"] {
+        width: 200px;
+        height: 200px;
+        border: 1px solid #000;
+        margin-bottom: 100px;
+        margin-left: 100px;
+      }
+      .box-1 {
+        transform: translate(50px, 50px);
+      }
+      .box-2 {
+        transform: rotate(30deg);
+      }
+      .box-3 {
+        transform: scale(2, 2);
+      }
+      .box-4 {
+        transform: scaleX(2);
+      }
+      .box-5 {
+        transform: skew(20deg, 40deg);
+      }
+      .box-6 {
+        transform: matrix(1, -0.3, 0, 1, 0, 0);
+      }
+      .box-7 {
+        transform: rotateX(150deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="title">Transform</div>
+    <div class="box-1">Translate</div>
+    <div class="box-2">Rotate</div>
+    <div class="box-3">Scale</div>
+    <div class="box-4">ScaleX</div>
+    <div class="box-5">Skew</div>
+    <div class="box-6">Matrix</div>
+    <div class="box-7">RotateX</div>
+  </body>
+</html>
