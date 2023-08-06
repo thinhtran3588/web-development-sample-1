@@ -1,0 +1,12 @@
+{
+  "id": 240486327,
+  "name": "Book 3",
+  "description": "Description 3",
+  "author": "Author 3",
+  "price": 300000,
+  "category": {
+    "id": 240486327,
+    "name": "Book 3"
+  },
+  "arr": ["ss", "ss"]
+}

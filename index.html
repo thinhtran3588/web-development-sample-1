@@ -2,22 +2,59 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="My First HTML" />
-    <meta name="keywords" content="HTML, CSS, JavaScript" />
-    <meta name="author" content="John Doe" />
-    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="index.css" />
+    <link href="./assets/css/fontawesome.css" rel="stylesheet" />
+    <link href="./assets/css/brands.css" rel="stylesheet" />
+    <link href="./assets/css/solid.css" rel="stylesheet" />
+    <script src="./assets/js/fontawesome.js"></script>
+    <script defer src="./index.js"></script>
   </head>
   <body>
-    <h1>Samples</h1>
-    <section>
-      <h2>Lesson 7</h2>
-      <div><a href="./lesson-7/font.html">Font</a></div>
-      <div><a href="./lesson-7/text-effects.html">Text Effects</a></div>
-      <div><a href="./lesson-7/transform.html">Transform</a></div>
-      <div><a href="./lesson-7/transition.html">Transition</a></div>
-      <div><a href="./lesson-7/animation.html">Animation</a></div>
-      <div><a href="./lesson-7/flex.html">Flex</a></div>
-      <div><a href="./lesson-7/responsive.html">Responsive</a></div>
-    </section>
+    <div class="menu md:bg-white">
+      <div class="profile">
+        <img
+          class="profile-picture"
+          src="/assets/images/profile.jpg"
+          alt="profile picture"
+        />
+        <div class="profile-name">Simone Olivia</div>
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Me</a></li>
+          <li><a href="#">What I Do</a></li>
+          <li><a href="#">Resume</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Testimonial</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="external-links">
+        <a href="#" class="tooltip" title="Facebook">
+          <i class="fa-brands fa-facebook"></i>
+          <span class="tooltiptext">Facebook</span>
+        </a>
+        <a href="#" class="tooltip" title="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+          <span class="tooltiptext">Instagram</span>
+        </a>
+        <a href="#" class="tooltip" title="Github">
+          <i class="fa-brands fa-github"></i>
+          <span class="tooltiptext">Github</span>
+        </a>
+        <a href="#" class="tooltip" title="LinkedIn">
+          <i class="fa-brands fa-linkedin"></i>
+          <span class="tooltiptext">LinkedIn</span>
+        </a>
+      </div>
+      <button id="btnMenu" type="button" class="menu-button" title="Menu">
+        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-sharp fa-xmark hidden"></i>
+      </button>
+    </div>
+    <div class="main">main content</div>
   </body>
 </html>

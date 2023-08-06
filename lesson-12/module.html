@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./sample-1.js"></script>
+  </head>
+  <body>
+    <div>Module</div>
+    <script type="module">
+      import { printB, add, getB } from "./sample-2.js";
+      //   console.log(b);
+
+      printB();
+      add(4);
+      printB();
+      console.log(getB());
+    </script>
+  </body>
+</html>

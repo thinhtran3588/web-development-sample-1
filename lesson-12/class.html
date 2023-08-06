@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>Class</div>
+    <script>
+      // const book = {
+      //   id: 1,
+      //   name: "Book 1",
+      //   description: "Description 1",
+      // };
+
+      // const book2 = {
+      //   id: 2,
+      //   name: "Book 2",
+      //   description: "Description 2",
+      // };
+
+      // book.getName();
+      // book2.getName();
+
+      // function Book(id, name, description) {
+      //   this.id = id;
+      //   this.name = name;
+      //   this.description = description;
+      // }
+
+      // const book3 = new Book(1, "Book 1", "Description 1");
+
+      class Book {
+        constructor(id, name, description, author, price, category) {
+          this.id = id;
+          this.name = name;
+          this.description = description;
+          this.author = author;
+          this.price = price;
+          this.category = category;
+        }
+
+        get info() {
+          return `${this.name} _ ${this.description}`;
+        }
+
+        set info(value) {
+          // const arr = value.split(" - ");
+          // const name = arr[0];
+          // const author = arr[1];
+
+          const [name, author] = value.split(" - ");
+          this.name = name;
+          this.author = author;
+        }
+
+        getInfo() {
+          return `${this.name} - ${this.author}`;
+        }
+
+        setInfo(name, author) {
+          this.name = name;
+          this.author = author;
+        }
+
+        static generateId() {
+          return Math.floor(Math.random() * 1000000000);
+        }
+      }
+
+      // const book1 = new Book(
+      //   Book.generateId(),
+      //   "Book 1",
+      //   "Description 1",
+      //   "Author 1",
+      //   100000,
+      //   "Fiction"
+      // );
+
+      // const book3 = new Book(
+      //   Book.generateId(),
+      //   "Book 1",
+      //   "Description 3",
+      //   "Author 1",
+      //   100000,
+      //   "Fiction3"
+      // );
+
+      // const book2 = new Book(
+      //   Book.generateId(),
+      //   "Book 2",
+      //   "Description 2",
+      //   "Author 2",
+      //   100000,
+      //   "Fiction2"
+      // );
+
+      // book1.generateId();
+
+      // book1.getInfo();
+      // book2.getIno();
+
+      // book1.getInfo();
+      // console.log(book1);
+      // const book1 = new Book(
+      //   Book.generateId(),
+      //   "Book 1",
+      //   "Description 1",
+      //   "Author 1",
+      //   100000
+      // );
+      // const book2 = new Book(
+      //   Book.generateId(),
+      //   "Book 2",
+      //   "Description 2",
+      //   "Author 2",
+      //   200000
+      // );
+
+      // JSON.stringify(book1);
+
+      class FictionBook extends Book {
+        constructor(id, name, description, author, price) {
+          super(id, name, description, author, price, "Fiction");
+        }
+
+        getInfo() {
+          return `${super.getInfo()} - ${this.category}`;
+        }
+      }
+      const fictionBook1 = new FictionBook(
+        FictionBook.generateId(),
+        "Book 3",
+        "Description 3",
+        "Author 3",
+        300000
+      );
+    </script>
+  </body>
+</html>
